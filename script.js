@@ -55,13 +55,12 @@ const playGame = (userChoice) => {
         drawGame();
     }
     else {
-        let userWin = true ;
         if (userChoice === "rock") {
             if (compChoice === "scissors" ) {
                 userWin = true;
             }
             else {
-                userWIn = false;
+                userWin = false;
             }
         }
         else if (userChoice === "scissors") {
@@ -72,7 +71,7 @@ const playGame = (userChoice) => {
                 userWin = false;
             }
         }
-        else {
+        else if(userChoice === "paper") {
             if (compChoice === "rock"){
                 userWin = true;
             }
