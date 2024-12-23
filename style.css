@@ -6,13 +6,110 @@
 }
 
 h1{
-    background-color: #211103;
+    background-color: #000000;
     color :aliceblue;
 }
+
 body {
-    background-image: url("images\background.png");
+    background-image: url("background.png");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
    }
+.choice {
+    height : 170px;
+    width : 170px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height : 150px;
+    width : 150px;
+    object-fit: cover;
+    border-radius: 25% ;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    margin-top: 15vmin;
+
+}
+
+.choice:hover{
+    opacity:0.75;
+    cursor : pointer;
+    background-color: rgb(107, 227, 235);
+}
+
+.score-board {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5vmin;
+    margin-top: 10vmin;
+    color: rgb(235, 233, 207);
+    gap : 6vmin;
+    
+}
+
+#user-score, #comp-score{
+    font-size:8vmin ;
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+    display: inline;
+    padding: 1vmin;
+    border-radius: 1rem;
+}
+
+#msg {
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+    font-size: 5vmin;
+    display: inline;
+    padding: 1vmin;
+    border-radius: 1rem;
+}
+
+.msg-container {
+    margin-top: 11vmin;
+}
+
+#user-text, #comp-text{
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+    font-size: 5vmin;
+    display: flex;
+    padding: 1vmin;
+    border-radius: 1rem;
+    margin-top: 5vmin;
+}
+
+.name {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 3vmin;
+    margin-top: 1vmin;
+    color: rgb(235, 233, 207);
+    gap : 20vmin;
+    
+}
+
+#paper-text, #rock-text, #scissors-text{
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+    font-size: 3vmin;
+    display: inline;
+    padding: 1vmin;
+    border-radius: 1rem;
+    margin-top: 0.5vmin;
+    margin-left: 1vmin;
+}
+
